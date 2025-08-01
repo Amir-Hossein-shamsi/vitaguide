@@ -11,9 +11,6 @@
 > ⚠️ *Disclaimer:* This project processes content from [FitDay.com](https://www.fitday.com) under **fair use** for research and educational purposes. No official partnership exists.
 
 ---
-
-<img src="assets/logo.png" alt="VitaGuide Application Interface" width="150">
-
 ## 🌐 Overview: How VitaGuide Works
 
 VitaGuide ingests real-world nutrition and fitness articles from trusted sources and extracts structured insights using an advanced Retrieval-Augmented Generation (RAG) pipeline.
