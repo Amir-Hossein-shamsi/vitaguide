@@ -5,11 +5,14 @@
 [![RAG Pipeline](https://img.shields.io/badge/RAG-Powered-purple)](https://arxiv.org/abs/2005.11401)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-vitaGuide-blue?logo=github)](https://github.com/Amir-Hossein-shamsi/vitaguide)
 
-> **AI-Powered Nutrition Guidance Backed by Science**
+> **AI-Powered Nutrition Guidance Backed by Science**  
 > VitaGuide analyzes **1,367+ nutrition and fitness articles** from FitDay.com to deliver personalized, evidence-based recommendations. Our RAG system transforms unstructured content into structured knowledge for trustworthy nutrition advice.
 
 > ⚠️ *Disclaimer:* This project processes content from [FitDay.com](https://www.fitday.com) under **fair use** for research and educational purposes. No official partnership exists.
 
+---
+
+<img src="assets/logo.png" alt="VitaGuide Application Interface" width="150">
 
 ## 🌐 Overview: How VitaGuide Works
 
@@ -19,15 +22,15 @@ VitaGuide ingests real-world nutrition and fitness articles from trusted sources
 
 Here's how the VitaGuide interface operates:
 
-![VitaGuide Application Interface](assets/Screenshot%202025-08-01%20225723.png)
+![VitaGuide Application Interface](assets/Screenshot%202025-08-01%20225723.png)  
 *Screenshot: User asks a workout question and receives an evidence-based answer with source citation.*
 
 #### 🔑 Key Features:
 
-1. **Intuitive UI** designed for nutrition and fitness queries
-2. **Source-attributed responses** with citations from trusted articles
-3. **Evidence-based guidance** using verified nutritional data
-4. **Personalized advice** based on user goals
+1. **Intuitive UI** designed for nutrition and fitness queries  
+2. **Source-attributed responses** with citations from trusted articles  
+3. **Evidence-based guidance** using verified nutritional data  
+4. **Personalized advice** based on user goals  
 5. **Interactive follow-ups** to refine insights
 
 ---
@@ -45,7 +48,9 @@ graph LR
     C --> D[Retrieval-Augmented Generation]
     D --> E[Evidence-Based Recommendations]
     E --> F[User-Friendly Interface]
-```
+````
+
+---
 
 ## 📚 FitDay Content Integration
 
@@ -68,6 +73,7 @@ Some example articles VitaGuide understands:
 * "Have You Heard of the Pegan Diet?"
 * "How Much Healthier is Organic Peanut Butter?"
 
+---
 
 ## 🔬 RAG-Powered Knowledge Framework
 
@@ -95,6 +101,7 @@ graph LR
     G --> H[Source-Attributed Output]
 ```
 
+---
 
 ## 🚀 Getting Started
 
@@ -127,12 +134,23 @@ cp .env.example .env
 # OTHER_CONFIG=...
 ```
 
+### 📁 Required Directory Structure
+
+Before running the app, create an `articles/` folder in the project root. This folder should contain your **data scrapers** or **pre-scraped article content** for ingestion.
+
+```bash
+mkdir articles
+```
+
+> 📌 The `articles/` folder is required for feeding nutrition and fitness content into the VitaGuide pipeline.
+
 ### ▶️ Run the App
 
 ```bash
 streamlit run main.py
 ```
 
+---
 
 ## 🌱 Why Nutrition-Specific RAG Matters
 
@@ -171,5 +189,7 @@ Distributed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
 > VitaGuide combines cutting-edge AI with evidence-based dietary science.
 
 Made with ❤️ and 🌱 for your wellness journey.
+
+
 
 
